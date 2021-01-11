@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Dimensions, StyleSheet, Animated, ViewPropTypes } from 'react-native';
+import { Dimensions, StyleSheet, Animated } from 'react-native';
 import PropTypes from 'prop-types';
 // galio components
 import Text from './atomic/ions/Text';
@@ -20,8 +20,8 @@ class Toast extends Component {
       PropTypes.string,
     ]),
     round: PropTypes.bool,
-    style: ViewPropTypes.style,
-    textStyle: ViewPropTypes.style,
+    style: PropTypes.any,
+    textStyle: PropTypes.any,
     styles: PropTypes.any,
     theme: PropTypes.any,
   };
